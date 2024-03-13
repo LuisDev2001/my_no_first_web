@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/b7301c403c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Mi primera web ?</title>
+</head>
+
+<body>
+  <div id="#app">
+    <header>
+      <a class="logo" href="/">
+        <i class="fa fa-code"></i>
+        A<b>C</b>ode
+      </a>
+
+      <!-- <input type="checkbox" id="checkMenu"> -->
+      <button class="btn-menu" id="btnMenu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/">Acerca de mi</a></li>
+          <li><a href="/">Trabajo</a></li>
+          <li><a href="/">Servicio</a></li>
+          <li><a href="/">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="principal-information">
+      <section class="about-me">
+        <div class="about-me__profile">
+          <h2>Acerca de mi</h2>
+          <p>¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+          <br>
+          <p>
+            Hola, soy Aldair, un entusiasta del desarrollo frontend y amante de Vue.js 🚀. Resido en Lima, Perú 😎,
+            donde fui educado y cuidado por mis padres. Actualmente, tengo mi hogar en el pintoresco distrito de Lurín.
+            Desde temprana edad, me sumergí en el fascinante universo de la tecnología, inicialmente cautivado por los
+            videojuegos. Con el tiempo, mi interés evolucionó hacia el apasionante mundo del desarrollo web.
+            <br><br>
+            Además de mi dedicación al código, me sumerjo en el mundo del stand-up comedy, explorando el humor y la
+            creatividad en el escenario. Fuera del ámbito digital, disfruto de actividades como nadar, jugar fútbol y
+            explorar las posibilidades infinitas que la tecnología ofrece. ¡Vamos más allá de las líneas de código
+            juntos! 🌐✨
+          </p>
+        </div>
+        <div class="about-me__profile-image">
+          <img src="./img/me.jpg" alt="LUIS ALDAIR QUISPE RIOS">
+        </div>
+      </section>
+      <section class="carousel">
+        <div class="carousel__item">
+          <img src="./img/carousel-1.jpg" alt="CAROUSEL 1">
+        </div>
+        <div class="carousel__item">
+          <img src="./img/carousel-2.jpg" alt="CAROUSEL 2">
+        </div>
+        <div class="carousel__item">
+          <img src="./img/carousel-1.jpg" alt="CAROUSEL 3">
+        </div>
+        <div class="carousel__item">
+          <img src="./img/carousel-2.jpg" alt="CAROUSEL 4">
+        </div>
+        <div class="carousel__item">
+          <img src="./img/carousel-1.jpg" alt="CAROUSEL 5">
+        </div>
+        <div class="carousel__item">
+          <img src="./img/carousel-2.jpg" alt="CAROUSEL 6">
+        </div>
+      </section>
+    </section>
+
+    <section class="my-work">
+      <h2>Trabajos</h2>
+      <div class="my-work__articles">
+        <article class="my-work__card">
+          <div class="my-work__image">
+            <img src="./img/carousel-1.jpg" alt="CAROUSEL 1">
+          </div>
+          <h3>Titulo 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim officia earum omnis error iusto magni, iure
+            inventore esse optio cupiditate harum nostrum libero. Quis, ad. Error expedita perspiciatis atque vel.</p>
+          <a href="/">Leer más</a>
+        </article>
+
+        <article class="my-work__card">
+          <div class="my-work__image">
+            <img src="./img/carousel-1.jpg" alt="CAROUSEL 1">
+          </div>
+          <h3>Titulo 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim officia earum omnis error iusto magni, iure
+            inventore esse optio cupiditate harum nostrum libero. Quis, ad. Error expedita perspiciatis atque vel.</p>
+          <a href="/">Leer más</a>
+        </article>
+
+        <article class="my-work__card">
+          <div class="my-work__image">
+            <img src="./img/carousel-1.jpg" alt="CAROUSEL 1">
+          </div>
+          <h3>Titulo 1</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim officia earum omnis error iusto magni, iure
+            inventore esse optio cupiditate harum nostrum libero. Quis, ad. Error expedita perspiciatis atque vel.</p>
+          <a href="/">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <hr>
+      <div class="contact-wrapper">
+        <h2>Contacto</h2>
+        <p>!Esperamos tu consulta!</p>
+        <form id="form">
+          <div class="field">
+            <label for="name">Nombre *</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="field">
+            <label for="message">Mensaje *</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="field">
+            <button>Enviar</button>
+          </div>
+          <div id="alert"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h3>Redes Sociales</h3>
+      <ul class="social-medial__links">
+        <li><a href="https://www.youtube.com/@luisfrontendvue2001/videos"><i class="fa fa-youtube"></i>YouTube</a></li>
+        <li><a href="https://www.linkedin.com/in/luis-aldair-quispe-rios-8b6096161/"><i
+              class="fa fa-linkedin"></i>Linkedin</a></li>
+        <li><a href="https://www.instagram.com/_aldair.qr_/"><i class="fa fa-instagram"></i>Instagram</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
