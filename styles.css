@@ -17,6 +17,7 @@
 body {
   font-family: "Inter", sans-serif;
   background: #f4f4f4;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -406,5 +407,8 @@ footer {
   }
   .social-medial__links {
     flex-direction: column;
+  }
+  .contact {
+    padding: 2rem 1rem 6rem;
   }
 }

@@ -30,3 +30,9 @@ $form.addEventListener('submit', (event) => {
 $btnMenu.addEventListener('click', () => {
   $menu.classList.toggle('active')
 })
+
+$menu.addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    $menu.classList.remove('active')
+  }
+})
